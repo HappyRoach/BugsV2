@@ -1,8 +1,0 @@
-{
-  "HOST": "172.29.192.1",
-  "USER": "postgres",
-  "PASSWORD": "postgres",
-  "PORT": "32769",
-  "DB_NAME": "database"
-
-}
