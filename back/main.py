@@ -19,3 +19,15 @@ class Db:
         )
         return True
 
+    def delete_user(self, id):
+        self.cur.execute(
+            """DELETE FROM survey WHERE id=%s;""",
+            (id)
+        )
+        return True
+
+    def select_all_user(self):
+        self.cur.execute(
+            """SELECT * FROM survey"""
+        )
+        return self.cur.fetchall()
