@@ -1,3 +1,1 @@
-import SQL
-
-SQL.Db().delete_user(14)
+#И нахуй я тут нужен?

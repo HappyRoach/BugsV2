@@ -15,6 +15,5 @@ def POST(): #Не ебу как, но оно работает, хоть и вы�
 @app.route('/Bugs', methods=['DELETE'])
 def DELETE():
     SQL.Db().delete_user(request.json['id'])
-    print(request.json['id'])
 
 app.run(debug=True)
