@@ -1,5 +1,5 @@
 HOST = "172.29.192.1"
 USER = "postgres"
 PASSWORD = "postgrespw"
-PORT = "32770"
+PORT = "32768"
 DB_NAME = "database"
