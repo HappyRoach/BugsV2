@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на стажировку</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h1>Заявка</h1>
+            <p>Пожалйста, введите свои данные для подачи заявки.</p>
+            <hr>
+
+            <h3>Личные данные</h3>
+            <label for="fullname"><b>ФИО</b></label>
+            <input type="text" placeholder="Введите ФИО" name="fullname" required>
+
+            <label for="DateOfBirth"><b>Дата рождения</b></label>
+            <input type="date" name="DateOfBirth" required>
+
+            <label for="pose"><b>Место рождения</b></label>
+            <input type="text" name="pos" required><br><br>
+
+            <label for="current_pose"><b>Адрес проживания</b></label>
+            <input type="text" name="current_pose" required>
+
+            <label for="oficcial_pose"><b>Адрес регистрации</b></label>
+            <input type="text" name="oficcial_pose" required>
+        </div>
+        <div class="container">
+            <h3>Контактные данные</h3>
+            <label for="phone">Мобильный номер</label>
+            <input id="phone" type="tel" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email">
+        </div>
+        <div class="container">
+            <h3>Направление обращения</h3>
+            <label for="spec"><b>Должность</b></label>
+            <select name="spec">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+            </select><br><br>
+            
+            <label for="work_time"><b>Сроки практики</b></label>
+            
+
+        </div>
+        
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+    </form>
+</body>
+</html>
