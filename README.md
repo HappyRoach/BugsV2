@@ -1,3 +1,5 @@
 # BugsV2
 
-Ебашим
+Работаем!
+
+Python: Flask, Postgres
