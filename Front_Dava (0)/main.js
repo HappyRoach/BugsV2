@@ -10,9 +10,6 @@ const formData = {
     spec: 'spec',
     data_work: 'data_work',
     region: 'region',
-    
-
-    email: 'myEmail@example.com' 
   }; 
 
   // Отправляем POST-запрос на URL вашего API 
