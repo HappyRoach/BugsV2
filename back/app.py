@@ -12,10 +12,12 @@ def GET():
 @app.route('/DB', methods=['POST'])
 def POST(): #Не ебу как, но оно работает, хоть и выдает ошибку 500. Главное работает.
     SQL.Db().insert_user(request.json['fullname'], request.json['date_time'], request.json['pose'], request.json['curreet_pose'], request.json['offical_pose'], request.json['email'], request.json['data_work'], request.json['region'], request.json['phone'], request.json['work_time'], request.json['spec'])
+    return "Выполнено"
 
 @app.route('/DB', methods=['DELETE'])
 def DELETE():
     SQL.Db().delete_user(request.json['id'])
+    return "Выполнено"
 
 @app.route('/json', methods=['GET'])
 def GET_JSON():
