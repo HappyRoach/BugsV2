@@ -10,78 +10,65 @@
 </head>
 <body bgcolor = #ffffff >
     <form action="">
-       
-        <!-- Шапка -->
-        
+    <!-- Шапка -->
         <div class="">
             <h1>Заявка</h1>
-                <p>Пожалуйста, введите свои данные для подачи заявки.</p>
-                    
+                <p>Пожалуйста, введите свои данные для подачи заявки.</p>             
         </div>
-        
-        <!-- Личные данные пользователя -->
-        
-            <div class="container" id="personal_data">
+    <!-- Личные данные пользователя -->
+        <div class="container" id="personal_data">
+            <div id="LoisParent2">
+                <div id="Child2">
+                    <h3>Личные данные</h3>
+                </div> 
+            </div>   
+            <div class="input-box">
+                <div class="lain" >
+                    <label for="fullname" id="a"><b>ФИО</b><span class="Star">*</span></label><br>
+                    <input type="text" placeholder="Введите ФИО" name="fullname" placeholder="Введите ФИО" id="aa" required>
+                    <span class="help-block" for = "a"></span>
+                </div>
 
-                <div id="LoisParent2">
+                <div class="lain" >
+                    <label for="DateOfBirth" id="b"><b>Дата рождения</b><span class="Star">*</span></label><br>
+                    <input type="date" name="DateOfBirth" id="bb" required>
+                    <span class="help-block" for = "b"></span>
+                </div>
 
-                    <div id="Child2">
-                        <h3>Личные данные</h3>
-                    </div> 
-                </div>   
+                <div class="lain" >
+                    <label for="pose" id="c"><b>Место рождения</b><span class="Star">*</span></label><br>
+                    <input type="text" name="pose" id="cc" placeholder="Введите место рождения" required>
+                    <span class="help-block" for = "c"></span>
+                </div>
 
-                            <div class="input-box">
-                                <div class="lain" >
-                                    <label for="fullname" id="a"><b>ФИО</b><span class="Star">*</span></label><br>
-                                    <input type="text" placeholder="Введите ФИО" name="fullname" placeholder="Введите ФИО" id="aa" required>
-                                <span class="help-block" for = "a"></span>
-                                </div>
+                <div class="lain" >
+                    <label for="curreet_pose" id="d"><b>Адрес проживания</b><span class="Star">*</span></label><br>
+                    <input type="text" name="curreen_pose" placeholder="Введите адрес проживания" id="dd" required>
+                    <span class="help-block" for = "d"></span>
+                </div>
 
+                <div class="lain" >
+                    <label for="offical_pose" id="e"><b>Адрес регистрации</b><span class="Star">*</span></label><br>
+                    <input type="text" name="offical_pose" placeholder="Введите адрес регистрации" id="ee" required>
+                    <span class="help-block" for = "e"></span>
+                </div>
+        </div>
 
-                                <div class="lain" >
-                                    <label for="DateOfBirth" id="b"><b>Дата рождения</b><span class="Star">*</span></label><br>
-                                    <input type="date" name="DateOfBirth" id="bb" required>
-                                    <span class="help-block" for = "b"></span>
-                                </div>
-
-                                <div class="lain" >
-                                   <label for="pose" id="c"><b>Место рождения</b><span class="Star">*</span></label><br>
-                                    <input type="text" name="pose" id="cc" placeholder="Введите место рождения" required>
-                                    <span class="help-block" for = "c"></span>
-                                </div>
-
-                                <div class="lain" >
-                                     <label for="curreet_pose" id="d"><b>Адрес проживания</b><span class="Star">*</span></label><br>
-                                     <input type="text" name="curreen_pose" placeholder="Введите адрес проживания" id="dd" required>
-                                     <span class="help-block" for = "d"></span>
-                                </div>
-
-                                <div class="lain" >
-                                    <label for="offical_pose" id="e"><b>Адрес регистрации</b><span class="Star">*</span></label><br>
-                                    <input type="text" name="offical_pose" placeholder="Введите адрес регистрации" id="ee" required>
-                                    <span class="help-block" for = "e"></span>
-                                </div>
-                            </div>
-
-            
-                                    <div id="Child3" class="input-box">
-
-                                    <!-- Кнопка с детьми -->
-       
-                                        <label>У вас есть дети?<span class="Star">*</span></label>
+        <div id="Child3" class="input-box">
+        <!-- Кнопка с детьми -->
+            <label>У вас есть дети?<span class="Star">*</span></label>
   
-                                        <input type="radio" name="name1" id="r-1" class="input" >
-                                        <label for="name1">Есть</label>
+            <input type="radio" name="name1" id="r-1" class="input" >
+            <label for="name1">Есть</label>
 
-                                        <input type="radio" name="name1" id="r-2" class="input" checked>
-                                        <label for="name1">Нет</label><br>
+            <input type="radio" name="name1" id="r-2" class="input" checked>
+            <label for="name1">Нет</label><br>
         
-                                        <label for="r-1" class="label l-1"><b>Укажите количество детей и их возраст</b><span class="Star">*</span><input type="text" placeholder="Введите кол-во детей и их возраст"></label>
-                                        <label for="r-2" class="label l-2"></label>
+            <label for="r-1" class="label l-1"><b>Укажите количество детей и их возраст</b><span class="Star">*</span><input type="text" placeholder="Введите кол-во детей и их возраст"></label>
+            <label for="r-2" class="label l-2"></label>
 
-                                    </div> 
+        </div> 
 
-        
             </div>                        
                                       <!-- Контактные данные пользователя -->
                                     
