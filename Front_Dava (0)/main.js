@@ -16,7 +16,7 @@ const formData = {
   }; 
 
   // Отправляем POST-запрос на URL вашего API 
-  fetch('https://api.example.com/register', { 
+  fetch('http://127.0.0.1:5000/DB', { 
     method: 'POST', // Указываем метод запроса 
     headers: { 
       'Content-Type': 'application/json' // Устанавливаем заголовок Content-Type для указания типа данных 
