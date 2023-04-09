@@ -8,15 +8,15 @@
     <title>Заявка</title>
     <link rel="stylesheet" href="test.css">
 </head>
-<body>
+<body bgcolor = #ffffff >
     <form>
        
         <!-- Шапка -->
         
-        <div class="container">
+        <div class="">
             <h1>Заявка</h1>
                 <p>Пожалуйста, введите свои данные для подачи заявки.</p>
-                    <hr>
+                    
         </div>
         
         <!-- Личные данные пользователя -->
@@ -31,37 +31,44 @@
                 </div>   
 
                             <div class="input-box">
-                                <div class="lain" width="100%">
-                                    <label for="fullname" id="a"><b>ФИО</b></label><br>
+                                <div class="lain" >
+                                    <label for="fullname" id="a"><b>ФИО</b><span class="Star">*</span></label><br>
                                     <input type="text" placeholder="Введите ФИО" name="fullname" placeholder="Введите ФИО" id="aa" required>
+                                <span class="help-block" for = "a"></span>
                                 </div>
 
-                                <div class="lain" width="100%">
-                                    <label for="DateOfBirth" id="b"><b>Дата рождения</b></label><br>
+
+                                <div class="lain" >
+                                    <label for="DateOfBirth" id="b"><b>Дата рождения</b><span class="Star">*</span></label><br>
                                     <input type="date" name="DateOfBirth" id="bb" required>
+                                    <span class="help-block" for = "b"></span>
                                 </div>
 
-                                <div width="100%" class="lain" >
-                                   <label for="pose" id="c"><b>Место рождения</b></label><br>
+                                <div class="lain" >
+                                   <label for="pose" id="c"><b>Место рождения</b><span class="Star">*</span></label><br>
                                     <input type="text" name="pos" id="cc" placeholder="Введите место рождения" required>
+                                    <span class="help-block" for = "c"></span>
                                 </div>
 
-                                <div class="lain" width="100%">
-                                     <label for="current_pose" id="d"><b>Адрес проживания</b></label><br>
+                                <div class="lain" >
+                                     <label for="current_pose" id="d"><b>Адрес проживания</b><span class="Star">*</span></label><br>
                                      <input type="text" name="current_pose" placeholder="Введите адрес проживания" id="dd" required>
+                                     <span class="help-block" for = "d"></span>
                                 </div>
-                                <div class="lain" width="100%">
-                                    <label for="oficcial_pose" id="e"><b>Адрес регистрации</b></label><br>
+
+                                <div class="lain" >
+                                    <label for="oficcial_pose" id="e"><b>Адрес регистрации</b><span class="Star">*</span></label><br>
                                     <input type="text" name="oficcial_pose" placeholder="Введите адрес регистрации" id="ee" required>
+                                    <span class="help-block" for = "e"></span>
                                 </div>
                             </div>
 
             
-                                    <div id="Child3">
+                                    <div id="Child3" class="input-box">
 
                                     <!-- Кнопка с детьми -->
        
-                                        <label>У вас есть дети?</label>
+                                        <label>У вас есть дети?<span class="Star">*</span></label>
   
                                         <input type="radio" name="name1" id="r-1" class="input" >
                                         <label for="name1">Есть</label>
@@ -69,51 +76,77 @@
                                         <input type="radio" name="name1" id="r-2" class="input" checked>
                                         <label for="name1">Нет</label><br>
         
-                                        <label for="r-1" class="label l-1"><b>Укажите количество детей и их возраст</b><input type="text" placeholder="Введите кол-во детей и их возраст"></label>
+                                        <label for="r-1" class="label l-1"><b>Укажите количество детей и их возраст</b><span class="Star">*</span><input type="text" placeholder="Введите кол-во детей и их возраст"></label>
                                         <label for="r-2" class="label l-2"></label>
 
-                                     </div>
+                                    </div> 
 
         
-
+            </div>                        
                                       <!-- Контактные данные пользователя -->
-        
-                                        <div class="container" id="contact_details"> 
+                                    
+                                       <div class="container" id="contact_details"> 
                                             <div id="LoisParent1">
                                                 <div id="Child1">
                                                     <h3>Контактные данные</h3>
                                                 </div>        
                                             </div><br>
-                                        </div>
-                                            <label for="phone"><b>Мобильный номер</b></label><br>
-                                            <input id="phone" placeholder="+7 (123) 456-78-90" type="tel" required><br><br>
                                         
-                                            <label for="email"><b>Email</b></label><br>
-                                            <input id="email" placeholder="Введите свою почту" type="email">
-            </div>
-
-                                                    <div class="container" >
-                                                        <div id="LoisParent2">
-                                                            <div id="Child2">
+                                       <div class="input-box">
+                                            <label for="phone" class="input-box"><b>Мобильный номер</b><span class="Star">*</span></label><br>
+                                            <input id="phone" placeholder="+7 (123) 456-78-90" type="tel"  required><br><br>
+                                        
+                                            <label for="email" class="input-box"><b>Электронная почта</b><span class="Star">*</span></label><br>
+                                            <input id="email" placeholder="Введите свою почту"  type="email" required>
+                                        </div>
+                                    </div>
+                                                    <div class="container" id="cantact_details"> 
+                                                        <div id="LoisParent3">
+                                                            <div id="Child3">
                                                                 <h3>Направление обращения</h3>
                                                             </div>        
                                                         </div><br>
-
-                                                    <label for="spec" ><b>Должность</b></label>
+                                                <div class="input-box">
+                                                    <label for="spec" ><b>Должность</b><span class="Star">*</span></label>
                                                         <select name="spec" id="Toot">
-                                                            <option value="1">IOS разработчик</option>
-                                                            <option value="2">Системный аналитик</option>
-                                                            <option value="3">Администратор баз данных</option>
-                                                            <option value="4" selected>Разработчик баз данных</option>
-                                                        </select><br><br>
-                                                    
-                                                    <label for="work_time"><b>Сроки практики</b></label>
+                                                            <option value="1" >IOS разработчик</option>
+                                                            <option value="2" >Системный аналитик</option>
+                                                            <option value="3" >Администратор баз данных</option>
+                                                            <option value="4" selected >Разработчик баз данных</option>
+                                                        </select><br>
+
+
+                                        <label class="Teeext" >                                     
+                    <p >Разработчик баз данных (Database Developer или Database Programmer)</p> 
+                    <p >отвечает за создание, администрирование и устранение неполадок компьютерных баз данных,</p>
+                    <p >которые могут обрабатывать большие объемы информации и обеспечивать ее безопасность</p>
+                                        </label><br>
+                                        
+                                        <label class="Teeext">                                     
+                    <p >Администратор базы данных (англ. Database administrator, DBA) — лицо, отвечающее за выработку требований </p> 
+                    <p >к базе данных, её проектирование, реализацию, эффективное использование и сопровождение, включая </p>
+                    <p >управление учётными записями пользователей БД и защиту от несанкционированного доступа.</p>
+                                        </label><br>
+
+                                        <label class="Teeext">                                     
+                    <p >Системный аналитик — специалист, который работает с IT-системами. Он переводит требования к IT-продукту </p> 
+                    <p > с языка бизнеса на язык разработки и контролирует процесс его создания — вплоть до запуска в работу. </p>
+                    <p >Системным аналитикам хорошо платят.</p>
+                                        </label><br>
+
+                                        <label class="Teeext">                                     
+                    <p >iOS-разработчик создает приложения для устройств Apple. Это не только iPhone, но и iPad, Apple Watch</p> 
+                    <p >и другие гаджеты, входящие в экосистему. Он не только пишет код и работает над интерфейсом, </p>
+                    <p >но и занимается поддержкой приложения, адаптацией его под разные модели устройств, тестированием и исправлением багов.</p>
+                                        </label><br>
+
+                                                    <label for="work_time"><b>Сроки практики</b><span class="Star">*</span></label>
                                                     <input type="date" name="fisrst_work_date" required>
 
                                                     <span>-</span>
 
                                                     <input type="date" name="scnd_work_date" required><br><br>
-                                                    <label for="region"><b>Желаемый регион для работы</b></label><br>
+                                                    <label for="region"><b>Желаемый регион для работы</b><span class="Star">*</span></label><br>
 
                                                     
                                                     <p><input type="radio" name="Region" required>Ростовская область<br></p>
@@ -130,7 +163,7 @@
 
                                                     <!-- Кнопка с документами -->
 
-                                                    <label>Вы уже подавали документы?</label>
+                                                    <label>Вы уже подавали документы?<span class="Star">*</span></label>
                                             
                                                     <input type="radio" name="name2" id="r-1" class="input" >
                                                     <label for="name2" >Да</label>
@@ -138,28 +171,22 @@
                                                     <input type="radio" name="name2" id="r-2" class="input" checked>
                                                     <label for="name2" >Нет</label><br>
                                                     
-                                                    <label for="r-1" class="label l-1"><b>Каков был результат?</b><input type="text" placeholder="Опишите как это было"></label>
+                                                    <label for="r-1" class="label l-1"><b>Каков был результат?</b><span class="Star">*</span><input type="text" placeholder="Опишите как это было"></label>
                                                     <label for="r-2" class="label l-2"></label><br>
-
-                                                                <div >
+                                                    </div><br>
+                                                    </div><br>
+                                                                <div class="fou">
                                                                     <label for="bth"><button class="butt" name="bth">Подать заявку</button></label>
-                                                                </div>
-                                                            
-                                                    </div>
-
-
-                                                
-                                                    
+                                                                </div><br>
+                                                                                                       
     </form>
 
                                                                             <!-- Футер -->
 
-                                                                    <footer>
-                                                                        <div id="footr"><br>
-                                                                            <p class=""><b>Частным лицам</b></p>
-                                                                            <p class="words"></p>  
-                                                                        </div>
-                                                                    </footer>
+                                                                     <footer id="End">
+                                                                            <div id="footr" class="row"><br>
+                                                                                <p align="center">2023 Bugs</p>
+                                                                        </footer>
                                                     
  </body>
 

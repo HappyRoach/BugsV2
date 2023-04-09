@@ -1,26 +1,32 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 
     }
     
+
     input {
         border: 0.2px;
         border-color: #000;
         border-style: solid;
     }
 
-    /* Add padding to containers */
-    .container {
-    background-color: white;
+    
+
+   /* Все главные части */
+    .container { 
+    background-color:#ffffff;
+    border-radius: 5px;
+    border: 1px solid #747474;
+    margin: 7px auto;
+    height: auto;
+    width: auto;
+    border-top: 0px;
     }
 
-    #LoisParent {
-    background: rgba(232, 231, 214, 0.95);
-    height: 40px;
-    }
-
-    #Child {
-        line-height: 40px;
+    form {
+        width: 80%;
+        margin: 0 auto 20px;
     }
 
     h3 {
@@ -30,7 +36,12 @@ body {
     
     #personal_data {
     border-color: #bebebe;
-    
+   
+    }
+
+    .input-box {
+        padding-left: 16px;
+        padding-bottom: 5px;
     }
     
     /* Full-width input fields */
@@ -48,46 +59,48 @@ body {
     input[type=text]:focus, input[type=password]:focus , input[type=date]:focus , input[type=email]:focus , input[type=tel]:focus {
         background-color: #ddd;
     }
-        
-    /* Overwrite default styles of hr */
-    hr {
-    border: 1px solid #fffdfd;
-    margin-bottom: 25px;
-    }
 
    #LoisParent1 {
         background: rgba(232, 231, 214, 0.95);
         height: 40px;
+        border-radius: 5px;
+        border-top: 1px solid #747474;
         }
     
     #Child1 {
-        line-height: 40px;
+        line-height: 0px;
+        
         }
 
-    #LoisParent2 {
-        background: rgba(232, 231, 214, 0.95);
-        height: 40px;
-        }
+        #LoisParent2 {
+            padding: 0%;
+            background: rgba(232, 231, 214, 0.95);
+            height: 40px;
+            border-radius: 5px;
+            border-top: 1px solid #747474;
+            }
         
-    #Child2 {
-        line-height: 40px;
-         }
-    
-
-
-    .input-box {
-        border:1px;
-        background-color: #d8c6c62e;
-        position:static;
+        #Child2 {
+            line-height: 0px;
+             }
         
-    }
+             #LoisParent3 {
+                padding: 0%;
+                background: rgba(232, 231, 214, 0.95);
+                height: 40px;
+                border-radius: 5px;
+                border-top: 1px solid #747474;
+                }
+            
+            #Child3 {
+                line-height: 0px;
+                
+                 }
 
-    #Child3 {
-        border: 1px;
-        background-color: #d8c6c62e;
-        border-color: #ddd;
-        height: 100px;
-    }
+
+.Teeext {
+    font-size: small;
+}
 
 #a, #b, #c, #d, #e {
         display:block;
@@ -99,12 +112,16 @@ body {
         clear:both;
         padding: 6px 12px;
         font-size: 14px;
-
     }
       
+    .Star {
+        color: red;
+    }
+
     .lain{
         display: inline-block;
-        width: 450px;
+        width: 1200px;
+        margin-right: 30px;
     }
     
     /* Add a blue text color to links */
@@ -122,12 +139,8 @@ body {
         cursor: pointer;
     }    
 
-    #footr {
-    background-color: rgba(202, 182, 182, 0.593);
-    color: rgb(0, 0, 0);
-    height: 300px;
-    width: 1509px;;
-    }
+
+    #End 
 
     #Gof {
         transform: translate(35px, 0);
@@ -181,4 +194,17 @@ body {
        .butt:active {
         transform: scale(0.9);
        }
+
+
+       .fou {
+        background-color: #ffffff;
+        border-radius: 5px;
+       }
+
+       .help-block {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: #737373
+    }
 
