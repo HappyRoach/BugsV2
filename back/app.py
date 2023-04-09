@@ -1,6 +1,7 @@
 import SQL
 from flask import Flask, jsonify, request
 import json
+import os
 
 app = Flask(__name__)
 
@@ -30,5 +31,9 @@ def POST_JSON():
         file.close()
         return "Выполнено"
 
+@app.route('/json', methods=['DELETE'])
+def DELETE_JSON():
+    os.remove(f'D:/BugsV2/back/JSON/{request.json["who"]}.json')
+    return 'Удаленно'
 
 app.run(debug=True)
