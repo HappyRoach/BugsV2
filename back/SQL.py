@@ -12,10 +12,10 @@ class Db:
         self.connection.autocommit = True
         self.cur = self.connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
-    def insert_user(self, FullName, Date, Pose, CurretPose, OfficalPose, Email, DataWork, Region, phone, WorkTime, spec):
+    def insert_user(self, fullname, date_time, pose, curret_pose, offical_pose, phone, email, data_work, region, WorkTime, spec):
         self.cur.execute(
             """INSERT INTO survey (fullname, date_time, pose, curret_pose, offical_pose, phone, email, data_work, region, work_time, spec) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);""",
-            (FullName, Date, Pose, CurretPose, OfficalPose, Email, DataWork, Region, phone, WorkTime, spec)
+            (fullname, date_time, pose, curret_pose, offical_pose, phone, email, data_work, region, WorkTime, spec)
         )
         return True
 
