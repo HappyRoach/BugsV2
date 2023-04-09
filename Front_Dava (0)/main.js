@@ -14,7 +14,7 @@ const formData = {
 
   // Отправляем POST-запрос на URL вашего API 
   fetch('http://127.0.0.1:5000/DB', { 
-    method: 'OPTIONS', // Указываем метод запроса 
+    method: 'POST', // Указываем метод запроса 
     headers: { 
       'Content-Type': 'application/json' // Устанавливаем заголовок Content-Type для указания типа данных 
     }, 
