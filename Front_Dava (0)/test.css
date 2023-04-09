@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    }
+    
+    input {
+        border: 0.2px;
+        border-color: #000;
+        border-style: solid;
+    }
+
+    /* Add padding to containers */
+    .container {
+    background-color: white;
+    }
+
+    #LoisParent {
+    background: rgba(232, 231, 214, 0.95);
+    height: 40px;
+    }
+
+    #Child {
+        line-height: 40px;
+    }
+
+    h3 {
+    color: #4CAF50;
+        
+    }
+    
+    #personal_data {
+    border-color: #bebebe;
+    
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] , input[type=date] , input[type=email] , input[type=tel] , #Toot {
+    width: 20%;
+    height: 25px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 6px;
+    
+    background: #f1f1f1;
+
+    }
+
+    input[type=text]:focus, input[type=password]:focus , input[type=date]:focus , input[type=email]:focus , input[type=tel]:focus {
+        background-color: #ddd;
+    }
+        
+    /* Overwrite default styles of hr */
+    hr {
+    border: 1px solid #fffdfd;
+    margin-bottom: 25px;
+    }
+
+   #LoisParent1 {
+        background: rgba(232, 231, 214, 0.95);
+        height: 40px;
+        }
+    
+    #Child1 {
+        line-height: 40px;
+        }
+
+    #LoisParent2 {
+        background: rgba(232, 231, 214, 0.95);
+        height: 40px;
+        }
+        
+    #Child2 {
+        line-height: 40px;
+         }
+    
+
+
+    .input-box {
+        border:1px;
+        background-color: #d8c6c62e;
+        position:static;
+        
+    }
+
+    #Child3 {
+        border: 1px;
+        background-color: #d8c6c62e;
+        border-color: #ddd;
+        height: 100px;
+    }
+
+#a, #b, #c, #d, #e {
+        display:block;
+        float:left;
+
+    }
+    #aa , #bb, #cc, #dd, #ee {
+        display: block;
+        clear:both;
+        padding: 6px 12px;
+        font-size: 14px;
+
+    }
+      
+    .lain{
+        display: inline-block;
+        width: 450px;
+    }
+    
+    /* Add a blue text color to links */
+    a {
+    color: dodgerblue;
+    }
+    
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    }
+
+    input[type=radio] {
+        cursor: pointer;
+    }    
+
+    #footr {
+    background-color: rgba(202, 182, 182, 0.593);
+    color: rgb(0, 0, 0);
+    height: 300px;
+    width: 1509px;;
+    }
+
+    #Gof {
+        transform: translate(35px, 0);
+    }
+
+    .label {
+        display: none;
+    }
+
+    #r-1:checked~.l-1,
+    #r-2:checked~.l-2{
+      display: block;
+    }
+
+    .butt {
+        padding: 10px 5px;
+        background: none;
+        border: 0.2px solid rgb(0, 90, 25);
+        font-size: 15px;
+        color: #ffffff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 6px;
+        background-color: #00ff48;
+        font-weight: bolder;
+       }
+       
+       .butt:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 120%;
+        background-color: #04640e;
+        top: 50%;
+        transform: skewX(30deg) translate(-150%, -50%);
+        transition: all 0.5s;
+       }
+       
+       .butt:hover {
+        background-color: #4cf067;
+        color: rgb(140, 255, 163);
+       }
+       
+       .butt:hover::before {
+        transform: skewX(30deg) translate(150%, -50%);
+        transition-delay: 0.1s;
+       }
+       
+       .butt:active {
+        transform: scale(0.9);
+       }
+

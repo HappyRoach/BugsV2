@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style/main.css">
     <title>Заявка на стажировку</title>
 </head>
+
 <body>
     <form>
         <div class="container">
@@ -15,25 +17,36 @@
             <hr>
         </div>
         <div class="container" id="personal_data">
-            
-                <h3>Личные данные</h3>
-        </div>
 
-        <div class="input-box">
-            <label for="fullname"><b>ФИО</b></label>
-            <input type="text" placeholder="Введите ФИО" name="fullname" required>
+            <h3>Личные данные</h3>
 
-            <label for="DateOfBirth"><b>Дата рождения</b></label>
-            <input type="date" name="DateOfBirth" required>
+            <div class="input-box">
+                <div class="lain">
+                    <label for="fullname"><b>ФИО</b></label>
+                    <input type="text" placeholder="Введите ФИО" name="fullname" required>
+                </div>
 
-            <label for="pose"><b>Место рождения</b></label>
-            <input type="text" name="pos" required><br><br>
+                <div class="lain">
+                    <label for="DateOfBirth"><b>Дата рождения</b></label>
+                    <input type="date" name="DateOfBirth" required>
+                </div>
 
-            <label for="current_pose"><b>Адрес проживания</b></label>
-            <input type="text" name="current_pose" required>
+                <div class="lain">
+                    <label for="pose"><b>Место рождения</b></label>
+                    <input type="text" name="pos" required>
+                </div>
 
-            <label for="oficcial_pose"><b>Адрес регистрации</b></label>
-            <input type="text" name="oficcial_pose" required>
+                <div class="lain">
+                    <label for="current_pose"><b>Адрес проживания</b></label>
+                    <input type="text" name="current_pose" required>
+                </div>
+                <div class="lain">
+                    <label for="oficcial_pose"><b>Адрес регистрации</b></label>
+                    <input type="text" name="oficcial_pose" required>
+                </div>
+
+
+            </div>
         </div>
         <div class="container" id="contact_details">
             <h3>Контактные данные</h3>
@@ -52,15 +65,15 @@
                 <option value="3">Администратор баз данных</option>
                 <option value="4">Разработчик баз данных</option>
             </select><br><br>
-            
+
             <label for="work_time"><b>Сроки практики</b></label>
             <input type="date" name="fisrst_work_date" required>
             <span>-</span>
             <input type="date" name="scnd_work_date" required>
         </div>
-        
-            <button type="submit" class="registerbtn">Registred</button>
-        </div>
+
+        <button type="submit" class="registerbtn">Registred</button>
     </form>
 </body>
+
 </html>
